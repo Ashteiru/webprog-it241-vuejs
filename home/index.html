@@ -3,15 +3,30 @@
 <head>
     <title>My first Vue page</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexbox-grid.css">
 </head>
 <body>
 
-<h1>Vue Example</h1>
-
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id='app'.</p>
+<div class="container">
+        <header> <h1> Ashton's Personal Profile Web page </h1>  </header>
+        <main>
+          <section class="main-content">
+            <div>1 About Me</div>
+            <div>2 Education / Achievements</div>
+            <div>3 Course </div>  
+            <div>4 IT Experience</div>
+            <div>5 Hobbies & Interests</div>
+            <div>6 Goals In Life / Dream</div>  
+            <div>7 Picture Gallery</div>
+          </section>
+          <aside class="sidebar">
+            </aside>
+        </main>
+        <footer> Asia Pacific College   </footer>
+</div>
 
 <div id="app">
-    {{ message }}
+  {{ message }}
 </div>
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -19,4 +34,3 @@
 <script src="js/vue.js"></script>
 
 </body>
-</html>
