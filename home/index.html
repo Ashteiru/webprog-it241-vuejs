@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue page</title>
-  <link rel="stylesheet" href="css/style.css?version=0.2">
-  <link rel="stylesheet" href="css/flexbox-grid.css">
-  <link rel="stylesheet" href="css/image.css">
+    <title>My first Vue page</title>
+    <link rel="stylesheet" href="css/style.css?version=0.2">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+    <link rel="stylesheet" href="css/image.css">
 </head>
 <body>
 
 <div class="container">
-        <header> <h1>Ashton's Profile Web page </h1>  
-        </header>
-        <main>
-          <section class="main-content">
+    <header> <h1>Ashton's Profile Web page </h1>
+    </header>
+    <main>
+        <section class="main-content">
             <div>About Me</div>
             <div>Education / Achievements</div>
-            <div>Course </div>  
-            <div> IT Experience</div>
-            <div> Hobbies & Interests</div>
-            <div> Goals In Life / Dream</div>  
-            <div> Picture Gallery</div>
-          </section>
-          <aside class="sidebar">
-            </aside>
-        </main>
-        <footer> Asia Pacific College   </footer>
+            <div>Course </div>
+            <div>IT Experience</div>
+            <div>Hobbies & Interests</div>
+            <div>Goals In Life / Dream</div>
+            <div>Picture Gallery</div>
+        </section>
+        <aside class="sidebar">
+        </aside>
+    </main>
+    <footer> Asia Pacific College   </footer>
 </div>
 
 <div id="app">
-  {{ message }}
+    {{ message }}
+</div>
 
-      <div>
+<div id="app2">
+    <div>
+        <img v-for="x in manyFoods" v-bind:src="x">
+    </div>
+</div>
 
-        <div id="app2">
-              <div>
-                        <img v-for="x in manyFoods" v-bind:src="x">
-                            </div>
-                            </div>
-              </div>
-                
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/image.js"></script>
 
-                  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-                      <script src="js/vue.js"></script>
-                          <script src="js/image.js"></script>
 </body>
 </html>
