@@ -1,7 +1,6 @@
 const app2 = Vue.createApp({
     data() {
         return {
-            message: "HWY!",
             manyFoods: [
                 'https://www.w3schools.com/vue/img_burrito.svg',
                 'https://www.w3schools.com/vue/img_salad.svg',
