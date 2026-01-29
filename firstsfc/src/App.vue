@@ -1,5 +1,4 @@
 <template>
-  <instrument-form/>
   <instruments/>
   <comment-form/>
   <comment/>
