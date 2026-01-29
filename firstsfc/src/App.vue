@@ -1,13 +1,8 @@
-</template>
-
-  <country/>
-  <food-item/>
-  <personal-profile/>
-  <food-item/>
+<template>
+  <instrument-form/>
+  <instruments/>
   <comment-form/>
   <comment/>
-   
-
 </template>
 
 <script></script>

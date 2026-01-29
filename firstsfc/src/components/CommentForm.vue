@@ -44,6 +44,8 @@
         submissionStatus.value = "Comment submitted successfully!";
         name.value = ''; // Clear form fields
         comment.value = '';
+        // Emit event to refresh comments list
+        window.dispatchEvent(new CustomEvent('commentAdded'))
       }
     } catch (err) {
       console.error("An unexpected error occurred:", err);
@@ -61,6 +63,7 @@
   label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: bold;
   }
   
   .form-control {
@@ -68,6 +71,12 @@
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
   }
   
   .btn {
@@ -77,5 +86,15 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+    font-weight: bold;
   }
   </style>
