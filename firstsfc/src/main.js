@@ -8,7 +8,7 @@ import CommentForm from './components/CommentForm.vue'
 import Comment from './components/Comment.vue'
 import InstrumentForm from './components/InstrumentForm.vue'
 import Instruments from './components/Instruments.vue'
-
+import RestApi from './components/RestApi.vue'
 const app = createApp(App)
 
 app.component('personal-profile', PersonalProfile)
@@ -18,5 +18,6 @@ app.component('comment-form', CommentForm)
 app.component('comment', Comment)
 app.component('instrument-form', InstrumentForm)
 app.component('instruments', Instruments)
+app.component('rest-api', RestApi)
 
 app.mount('#app')
